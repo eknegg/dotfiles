@@ -1,8 +1,17 @@
 "*":
+  "atom-python-virtualenv":
+    additionalVirtualEnvPaths: "$HOME/.pyenv/versions/"
+    getWorkOnHome: "$HOME/.virtualenvs"
+  "autocomplete-python":
+    useKite: false
   autoprefixer: {}
   core:
     disabledPackages: [
       "react"
+      "kite"
+    ]
+    packagesWithKeymapsDisabled: [
+      "github"
     ]
     telemetryConsent: "no"
     themes: [
@@ -11,7 +20,7 @@
     ]
   editor:
     fontFamily: "Menlo"
-    fontSize: 15
+    fontSize: 16
     invisibles:
       cr: " "
       eol: " "
@@ -28,8 +37,11 @@
     enableBackgroundColor: false
   jshint:
     supportLintingJsx: true
-  linter:
-    showErrorPanel: false
+  kite:
+    showKiteTourOnStartup: false
+  linter: {}
+  "linter-ui-default":
+    panelHeight: 69
   "markdown-preview":
     useGitHubStyle: true
   minimap:

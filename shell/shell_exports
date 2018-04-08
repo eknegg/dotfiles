@@ -15,6 +15,9 @@ export LANG="en_US"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+#VIRTUAL ENV DIR
+export WORKON_HOME=~/.virtualenvs
+
 # SSH
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
